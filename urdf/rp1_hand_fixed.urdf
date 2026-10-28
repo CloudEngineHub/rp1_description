@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <robot name="rp1_hand_fixed">
   <!-- ===== BASE LINK ===== -->
   <link name="base_link">
@@ -12,8 +12,17 @@
       <geometry>
         <mesh filename="../meshes/base_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/base_link_hip_flange_blue.STL"/>
+      </geometry>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
   </link>
@@ -29,8 +38,8 @@
       <geometry>
         <mesh filename="../meshes/left_hip_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -59,8 +68,8 @@
       <geometry>
         <mesh filename="../meshes/left_hip_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -89,8 +98,8 @@
       <geometry>
         <mesh filename="../meshes/left_hip_yaw_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -119,8 +128,8 @@
       <geometry>
         <mesh filename="../meshes/left_knee_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -149,8 +158,8 @@
       <geometry>
         <mesh filename="../meshes/left_ankle_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -177,10 +186,19 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/left_ankle_roll_link.STL"/>
+        <mesh filename="../meshes/left_ankle_roll_link_visual_white.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/left_ankle_roll_detail_blue.STL"/>
+      </geometry>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -246,8 +264,8 @@
       <geometry>
         <mesh filename="../meshes/right_hip_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -276,8 +294,8 @@
       <geometry>
         <mesh filename="../meshes/right_hip_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -306,8 +324,8 @@
       <geometry>
         <mesh filename="../meshes/right_hip_yaw_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -336,8 +354,8 @@
       <geometry>
         <mesh filename="../meshes/right_knee_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -366,8 +384,8 @@
       <geometry>
         <mesh filename="../meshes/right_ankle_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -394,10 +412,19 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/right_ankle_roll_link.STL"/>
+        <mesh filename="../meshes/right_ankle_roll_link_visual_white.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/right_ankle_roll_detail_blue.STL"/>
+      </geometry>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -463,8 +490,8 @@
       <geometry>
         <mesh filename="../meshes/waist_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -491,10 +518,19 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/waist_yaw_link.STL"/>
+        <mesh filename="../meshes/waist_yaw_link_visual_white.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/waist_yaw_logo_visual_blue.STL"/>
+      </geometry>
+      <material name="ROBO_PARTY_BLUE">
+        <color rgba="0.039216 0.235294 0.588235 1"/>
       </material>
     </visual>
     <collision>
@@ -524,8 +560,8 @@
       <geometry>
         <mesh filename="../meshes/left_shoulder_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -554,8 +590,8 @@
       <geometry>
         <mesh filename="../meshes/left_shoulder_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -584,8 +620,8 @@
       <geometry>
         <mesh filename="../meshes/left_shoulder_yaw_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -614,8 +650,8 @@
       <geometry>
         <mesh filename="../meshes/left_elbow_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -644,8 +680,8 @@
       <geometry>
         <mesh filename="../meshes/left_wrist_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -674,8 +710,8 @@
       <geometry>
         <mesh filename="../meshes/left_wrist_yaw_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -704,8 +740,8 @@
       <geometry>
         <mesh filename="../meshes/left_wrist_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -735,8 +771,8 @@
       <geometry>
         <mesh filename="../meshes/right_shoulder_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -765,8 +801,8 @@
       <geometry>
         <mesh filename="../meshes/right_shoulder_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -795,8 +831,8 @@
       <geometry>
         <mesh filename="../meshes/right_shoulder_yaw_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -825,8 +861,8 @@
       <geometry>
         <mesh filename="../meshes/right_elbow_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -855,8 +891,8 @@
       <geometry>
         <mesh filename="../meshes/right_wrist_roll_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -885,8 +921,8 @@
       <geometry>
         <mesh filename="../meshes/right_wrist_yaw_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_BLUE">
+        <color rgba="0.0784 0.3137 0.9216 1"/>
       </material>
     </visual>
     <collision>
@@ -915,8 +951,8 @@
       <geometry>
         <mesh filename="../meshes/right_wrist_pitch_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -945,7 +981,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/base_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1033,7 +1069,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger11_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1055,7 +1091,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger12_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1077,7 +1113,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger13_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1099,8 +1135,8 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger14_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1121,7 +1157,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger21_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1143,7 +1179,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger22_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1165,8 +1201,8 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger23_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1187,7 +1223,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger31_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1209,7 +1245,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger32_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1231,8 +1267,8 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger33_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1253,7 +1289,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger41_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1275,7 +1311,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger42_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1297,8 +1333,8 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger43_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1319,7 +1355,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger51_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1341,7 +1377,7 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger52_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1363,8 +1399,8 @@
       <geometry>
         <mesh filename="../meshes/hand/left/finger53_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1470,7 +1506,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/base_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1558,7 +1594,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger11_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1580,7 +1616,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger12_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1602,7 +1638,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger13_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1624,8 +1660,8 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger14_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1646,7 +1682,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger21_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1668,7 +1704,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger22_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1690,8 +1726,8 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger23_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1712,7 +1748,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger31_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1734,7 +1770,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger32_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1756,8 +1792,8 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger33_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1778,7 +1814,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger41_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1800,7 +1836,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger42_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1822,8 +1858,8 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger43_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -1844,7 +1880,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger51_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1866,7 +1902,7 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger52_link.STL"/>
       </geometry>
-      <material name="">
+      <material name="RP1_WHITE">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
@@ -1888,8 +1924,8 @@
       <geometry>
         <mesh filename="../meshes/hand/right/finger53_link.STL"/>
       </geometry>
-      <material name="">
-        <color rgba="0.2 0.2 0.2 1"/>
+      <material name="RP1_WHITE">
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>

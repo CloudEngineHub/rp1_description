@@ -22,6 +22,7 @@
       <freejoint name="base_link_freejoint"/>
       <inertial pos="-0.03786057 -0.00301243 -0.04479345" mass="3.295" fullinertia="0.00960796 0.00699457 0.00815508 0.00000112 -0.00015116 -0.00000270"/>
       <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="base_link" material="base_link_material"/>
+      <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="base_link_hip_flange_blue" material="detail_blue_material"/>
       <!-- LEFT LEG -->
       <body name="left_hip_pitch_link" pos="-0.03843 0.062987 -0.051639" quat="1 0 0 0">
         <joint axis="0 1 0" name="left_hip_pitch_joint" type="hinge" range="-2.86 2.86" armature="0.0290856"/>
@@ -53,6 +54,7 @@
                   <joint axis="0.999993677858222 0 0.00355587451777954" name="left_ankle_roll_joint" type="hinge" range="-0.26 0.26" armature="0.006266268" frictionloss="0.1"/>
                   <inertial pos="0.008711 -0.000002 -0.021633" mass="0.6430" fullinertia="0.000361 0.001920 0.002002 0.000000 0.000123 0.000000"/>
                   <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="left_ankle_roll_link" material="left_ankle_roll_material"/>
+                  <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="left_ankle_roll_detail_blue" material="detail_blue_material"/>
                   <geom name="left_foot_toe_neg_collision" type="capsule" class="collision" size="0.01" fromto="0.03 -0.03 -0.035 0.09 -0.03 -0.035"/>
                   <geom name="left_foot_outer_neg_collision" type="capsule" class="collision" size="0.01" fromto="-0.065 -0.02 -0.035 0.11 -0.02 -0.035"/>
                   <geom name="left_foot_inner_neg_collision" type="capsule" class="collision" size="0.01" fromto="-0.0775 -0.01 -0.035 0.1225 -0.01 -0.035"/>
@@ -97,6 +99,7 @@
                   <joint axis="0.999993677858222 0 0.00355587451777984" name="right_ankle_roll_joint" type="hinge" range="-0.26 0.26" armature="0.006266268" frictionloss="0.1"/>
                   <inertial pos="0.008711 -0.000002 -0.021633" mass="0.6430" fullinertia="0.000361 0.001920 0.002002 0.000000 0.000123 0.000000"/>
                   <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="right_ankle_roll_link" material="right_ankle_roll_material"/>
+                  <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="right_ankle_roll_detail_blue" material="detail_blue_material"/>
                   <geom name="right_foot_toe_neg_collision" type="capsule" class="collision" size="0.01" fromto="0.03 -0.03 -0.035 0.09 -0.03 -0.035"/>
                   <geom name="right_foot_outer_neg_collision" type="capsule" class="collision" size="0.01" fromto="-0.065 -0.02 -0.035 0.11 -0.02 -0.035"/>
                   <geom name="right_foot_inner_neg_collision" type="capsule" class="collision" size="0.01" fromto="-0.0775 -0.01 -0.035 0.1225 -0.01 -0.035"/>
@@ -121,6 +124,7 @@
           <joint axis="0 0 -1" name="waist_yaw_joint" type="hinge" range="-2.91 2.91" armature="0.0290856"/>
           <inertial pos="-0.001424 0.000080 0.128866" mass="8.3430" fullinertia="0.109179 0.092853 0.041145 -0.000027 0.002082 -0.000013"/>
           <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="waist_yaw_link" material="waist_yaw_material"/>
+          <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="waist_yaw_logo" material="robo_party_logo_material"/>
           <geom name="torso_lower_collision" type="capsule" class="collision" size="0.090" fromto="0.0100 0 0.0394 0.0100 0 0.0800"/>
           <geom name="torso_middle_collision" type="capsule" class="collision" size="0.120" fromto="-0.0244 0 0.1450 -0.0244 0 0.2100"/>
           <geom name="torso_upper_collision" type="capsule" class="collision" size="0.088" fromto="-0.0185 0 0.3350 -0.0185 0 0.33668"/>
@@ -221,15 +225,16 @@
     <mesh file="meshes/left_hip_yaw_link.STL"/>
     <mesh file="meshes/left_knee_link.STL"/>
     <mesh file="meshes/left_ankle_pitch_link.STL"/>
-    <mesh file="meshes/left_ankle_roll_link.STL"/>
+    <mesh name="left_ankle_roll_link" file="meshes/left_ankle_roll_link_visual_white.STL"/>
     <mesh file="meshes/right_hip_pitch_link.STL"/>
     <mesh file="meshes/right_hip_roll_link.STL"/>
     <mesh file="meshes/right_hip_yaw_link.STL"/>
     <mesh file="meshes/right_knee_link.STL"/>
     <mesh file="meshes/right_ankle_pitch_link.STL"/>
-    <mesh file="meshes/right_ankle_roll_link.STL"/>
+    <mesh name="right_ankle_roll_link" file="meshes/right_ankle_roll_link_visual_white.STL"/>
     <mesh file="meshes/waist_roll_link.STL"/>
-    <mesh file="meshes/waist_yaw_link.STL"/>
+    <mesh name="waist_yaw_link" file="meshes/waist_yaw_link_visual_white.STL"/>
+    <mesh name="waist_yaw_logo" file="meshes/waist_yaw_logo_visual_blue.STL"/>
     <mesh file="meshes/left_shoulder_pitch_link.STL"/>
     <mesh file="meshes/left_shoulder_roll_link.STL"/>
     <mesh file="meshes/left_shoulder_yaw_link.STL"/>
@@ -244,35 +249,40 @@
     <mesh file="meshes/right_wrist_roll_link.STL"/>
     <mesh file="meshes/right_wrist_pitch_link.STL"/>
     <mesh file="meshes/right_wrist_yaw_link.STL"/>
-    <material name="base_link_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_hip_pitch_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_hip_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_hip_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_knee_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_ankle_pitch_material" rgba="0.650980 0.619608 0.588235 1"/>
-    <material name="left_ankle_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_hip_pitch_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_hip_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_hip_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_knee_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_ankle_pitch_material" rgba="0.650980 0.619608 0.588235 1"/>
-    <material name="right_ankle_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="waist_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="waist_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_shoulder_pitch_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_shoulder_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_shoulder_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_elbow_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_wrist_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_wrist_pitch_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="left_wrist_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_shoulder_pitch_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_shoulder_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_shoulder_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_elbow_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_wrist_roll_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_wrist_pitch_material" rgba="0.752941 0.752941 0.752941 1"/>
-    <material name="right_wrist_yaw_material" rgba="0.752941 0.752941 0.752941 1"/>
+    <material name="base_link_material" rgba="1 1 1 1"/>
+    <material name="left_hip_pitch_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="left_hip_roll_material" rgba="1 1 1 1"/>
+    <material name="left_hip_yaw_material" rgba="1 1 1 1"/>
+    <material name="left_knee_material" rgba="1 1 1 1"/>
+    <material name="left_ankle_pitch_material" rgba="1 1 1 1"/>
+    <material name="left_ankle_roll_material" rgba="1 1 1 1"/>
+    <material name="right_hip_pitch_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="right_hip_roll_material" rgba="1 1 1 1"/>
+    <material name="right_hip_yaw_material" rgba="1 1 1 1"/>
+    <material name="right_knee_material" rgba="1 1 1 1"/>
+    <material name="right_ankle_pitch_material" rgba="1 1 1 1"/>
+    <material name="right_ankle_roll_material" rgba="1 1 1 1"/>
+    <material name="waist_roll_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="waist_yaw_material" rgba="1 1 1 1"/>
+    <material name="robo_party_logo_material" rgba="0.039216 0.235294 0.588235 1"/>
+    <material name="left_shoulder_pitch_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="left_shoulder_roll_material" rgba="1 1 1 1"/>
+    <material name="left_shoulder_yaw_material" rgba="1 1 1 1"/>
+    <material name="left_elbow_material" rgba="1 1 1 1"/>
+    <material name="left_wrist_roll_material" rgba="1 1 1 1"/>
+    <material name="left_wrist_pitch_material" rgba="1 1 1 1"/>
+    <material name="left_wrist_yaw_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="right_shoulder_pitch_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="right_shoulder_roll_material" rgba="1 1 1 1"/>
+    <material name="right_shoulder_yaw_material" rgba="1 1 1 1"/>
+    <material name="right_elbow_material" rgba="1 1 1 1"/>
+    <material name="right_wrist_roll_material" rgba="1 1 1 1"/>
+    <material name="right_wrist_pitch_material" rgba="1 1 1 1"/>
+    <material name="right_wrist_yaw_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <material name="detail_blue_material" rgba="0.0784 0.3137 0.9216 1"/>
+    <mesh name="base_link_hip_flange_blue" file="meshes/base_link_hip_flange_blue.STL"/>
+    <mesh name="right_ankle_roll_detail_blue" file="meshes/right_ankle_roll_detail_blue.STL"/>
+    <mesh name="left_ankle_roll_detail_blue" file="meshes/left_ankle_roll_detail_blue.STL"/>
   </asset>
   <actuator>
     <motor class="RP1" gear="1" ctrlrange="-140 140" name="left_hip_pitch_joint" joint="left_hip_pitch_joint"/>
